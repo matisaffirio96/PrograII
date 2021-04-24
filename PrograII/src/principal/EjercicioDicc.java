@@ -29,13 +29,13 @@ public class EjercicioDicc {
             System.out.println(resultado.Elegir());
             resultado.Sacar(resultado.Elegir());
         }*/
-        ConjuntoTDA claves = new ConjuntoLD();
-        claves.InicializarConjunto();
-        claves = d2.Claves();
+        ConjuntoTDA clavesDic = new ConjuntoLD();
+        clavesDic.InicializarConjunto();
+        clavesDic = d2.Claves();
         int suma;
-        while(!claves.Conjuntovacio()){
+        while(!clavesDic.Conjuntovacio()){
             suma = 0;
-            int clave = claves.Elegir();
+            int clave = clavesDic.Elegir();
             resultado = d2.Recuperar(clave);
             while (!resultado.Conjuntovacio()){
                 suma = suma+resultado.Elegir();
@@ -47,7 +47,7 @@ public class EjercicioDicc {
                 d1.Agregar(clave,1);
             }
 
-            claves.Sacar(clave);
+            clavesDic.Sacar(clave);
         }
 
 
