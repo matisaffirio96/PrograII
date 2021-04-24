@@ -15,12 +15,16 @@ public class Ejercicio1 {
         p1.Apilar(1);
         p1.Apilar(2);
         p1.Apilar(3);
-        p1.Apilar(4);
+        p1.Apilar(3);
+        p1.Apilar(2);
+        p1.Apilar(5);
 
         //Cargo la pila 2
         p2.Apilar(1);
         p2.Apilar(2);
         p2.Apilar(3);
+        p2.Apilar(3);
+        p2.Apilar(2);
         
 
         int aux,aux2;
@@ -35,6 +39,7 @@ public class Ejercicio1 {
             }
             else {
                 p1.Desapilar();
+                resultado = false;
             }
         }
 
