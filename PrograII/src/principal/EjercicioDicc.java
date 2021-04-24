@@ -9,23 +9,48 @@ public class EjercicioDicc {
 
     public void Practica(DicSimpleA d1, DicMultipleA d2){
 
+
         ConjuntoTDA resultado;
 
         d1.IncicializarDiccionario();
         d2.IncicializarDiccionario();
 
         d2.Agregar(1,1);
-        d2.Agregar(2,34);
-        d2.Agregar(3,21);
-        d2.Agregar(4,11);
-        d2.Agregar(2,35);
+        d2.Agregar(2,3);
+        d2.Agregar(2,5);
+        d2.Agregar(3,-3);
+        d2.Agregar(3,2);
+        d2.Agregar(5,1);
 
 
-        resultado = d2.Recuperar(2);
+
+        /*resultado = d2.Recuperar(2);
         while (!resultado.Conjuntovacio()){
             System.out.println(resultado.Elegir());
             resultado.Sacar(resultado.Elegir());
+        }*/
+        ConjuntoTDA claves = new ConjuntoLD();
+        claves.InicializarConjunto();
+        claves = d2.Claves();
+        int suma;
+        while(!claves.Conjuntovacio()){
+            suma = 0;
+            int clave = claves.Elegir();
+            resultado = d2.Recuperar(clave);
+            while (!resultado.Conjuntovacio()){
+                suma = suma+resultado.Elegir();
+                resultado.Sacar(resultado.Elegir());
+            }
+            if (suma<0){
+                d1.Agregar(clave,-1);
+            } else {
+                d1.Agregar(clave,1);
+            }
+
+            claves.Sacar(clave);
         }
+
+
 
     }
 }

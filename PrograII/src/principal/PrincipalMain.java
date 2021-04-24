@@ -34,6 +34,7 @@ public class PrincipalMain {
         ejd.Practica(d1,d2);
 
 
+
     }
 
 
