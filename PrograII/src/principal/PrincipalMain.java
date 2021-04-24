@@ -1,7 +1,11 @@
 package principal;
 import api.ConjuntoTDA;
+import api.DiccionarioMultipleTDA;
+import api.DiccionarioSimpleTDA;
 import api.PilaTDA;
 import impl.Conjunto;
+import impl.DicMultipleA;
+import impl.DicSimpleA;
 import impl.PilaTF;
 import principal.Ejercicio1;
 
@@ -13,6 +17,8 @@ public class PrincipalMain {
 
         PilaTF p1 = new PilaTF();
         PilaTF p2 = new PilaTF();
+        DicSimpleA d1 = new DicSimpleA();
+        DicMultipleA d2 = new DicMultipleA();
         /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
@@ -23,6 +29,9 @@ public class PrincipalMain {
 
         Ejercicio1 ej = new Ejercicio1();
         System.out.println(ej.SecuenciaPila(p1,p2));
+
+        EjercicioDicc ejd = new EjercicioDicc();
+        ejd.Practica(d1,d2);
 
 
     }
