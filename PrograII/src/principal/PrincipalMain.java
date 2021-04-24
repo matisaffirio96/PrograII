@@ -3,6 +3,7 @@ import api.ConjuntoTDA;
 import api.PilaTDA;
 import impl.Conjunto;
 import impl.PilaTF;
+import principal.Ejercicio1;
 
 public class PrincipalMain {
     public static void main(String[] args) {
@@ -13,10 +14,17 @@ public class PrincipalMain {
         PilaTF p1 = new PilaTF();
         PilaTF p2 = new PilaTF();
         PilaTF p3 = new PilaTF();
-        PasarPila(p1,p2); // Ejercicio 1-a
+        /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
         SumarElementos(p2); // Ejercicio 1-e
+        SumarElementos2(p1);*/
+
+        //Ejercicio1.SecuenciaPila(PilaTDA p1, PilaTDA p2);
+
+        Ejercicio1 ej = new Ejercicio1();
+        ej.SecuenciaPila(p1,p2);
+
 
     }
 
@@ -122,6 +130,28 @@ public class PrincipalMain {
         System.out.println("La suma de los elementos es: " + sumador);
 
     }
-    
+
+    public static void SumarElementos2(PilaTDA p1){
+        int sumador2 = 0;
+
+        p1.InicializarPila();
+
+        p1.Apilar(1);
+        p1.Apilar(3);
+        p1.Apilar(6);
+        p1.Apilar(5);
+        System.out.println("El tope final es:" + p1.Tope());
+
+        while (!p1.PilaVacia()){
+            sumador2 = sumador2 + p1.Tope();
+            p1.Desapilar();
+        }
+
+        System.out.println("La suma de los elementos es: " + sumador2);
+
+    }
+
+
+
 }
 
