@@ -13,11 +13,13 @@ public class PrincipalMain {
         PilaTF p1 = new PilaTF();
         PilaTF p2 = new PilaTF();
         PilaTF p3 = new PilaTF();
-        PasarPila(p1,p2); // Ejercicio 1-a
+        /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
         SumarElementos(p2); // Ejercicio 1-e
-        SumarElementos2(p1);
+        SumarElementos2(p1);*/
+
+
 
     }
 
@@ -141,5 +143,8 @@ public class PrincipalMain {
 
         System.out.println("La suma de los elementos es: " + sumador2);
     }
+
+
+
 }
 
