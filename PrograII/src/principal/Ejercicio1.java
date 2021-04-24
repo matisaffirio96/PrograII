@@ -21,17 +21,24 @@ public class Ejercicio1 {
         p2.Apilar(1);
         p2.Apilar(2);
         p2.Apilar(3);
-        int aux;
-        while (!p2.PilaVacia()){
-            aux = p1.Tope();
-            if(aux == p2.Tope()){
-                System.out.println("p1 " + aux +" p2 " + p2.Tope());
-                p2.Desapilar();
-            }
-            p1.Desapilar();
+        
 
+        int aux,aux2;
+        boolean resultado = false;
+        while (!p1.PilaVacia()&&!p2.PilaVacia()){
+            aux = p1.Tope();
+            aux2 = p2.Tope();
+            if (aux == aux2){
+                p2.Desapilar();
+                p1.Desapilar();
+                resultado = true;
+            }
+            else {
+                p1.Desapilar();
+            }
         }
-        return false;
+
+        return resultado;
     }
 
 }
