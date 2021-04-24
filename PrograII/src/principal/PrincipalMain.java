@@ -17,6 +17,7 @@ public class PrincipalMain {
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
         SumarElementos(p2); // Ejercicio 1-e
+        SumarElementos2(p1);
 
     }
 
@@ -122,6 +123,23 @@ public class PrincipalMain {
         System.out.println("La suma de los elementos es: " + sumador);
 
     }
-    
+
+    public static void SumarElementos2(PilaTDA p1){
+        int sumador2 = 0;
+
+        p1.InicializarPila();
+
+        p1.Apilar(1);
+        p1.Apilar(3);
+        p1.Apilar(6);
+        p1.Apilar(5);
+
+        while (!p1.PilaVacia()){
+            sumador2 = sumador2 + p1.Tope();
+            p1.Desapilar();
+        }
+
+        System.out.println("La suma de los elementos es: " + sumador2);
+    }
 }
 
