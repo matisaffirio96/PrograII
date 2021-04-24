@@ -13,7 +13,6 @@ public class PrincipalMain {
 
         PilaTF p1 = new PilaTF();
         PilaTF p2 = new PilaTF();
-        PilaTF p3 = new PilaTF();
         /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
@@ -23,7 +22,7 @@ public class PrincipalMain {
         //Ejercicio1.SecuenciaPila(PilaTDA p1, PilaTDA p2);
 
         Ejercicio1 ej = new Ejercicio1();
-        ej.SecuenciaPila(p1,p2);
+        System.out.println(ej.SecuenciaPila(p1,p2));
 
 
     }

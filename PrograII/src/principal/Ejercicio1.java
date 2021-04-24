@@ -20,35 +20,25 @@ public class Ejercicio1 {
         //Cargo la pila 2
         p2.Apilar(1);
         p2.Apilar(2);
-        p2.Apilar(1);
+        p2.Apilar(3);
+        
 
-        /*
-        Pila 1
-        4
-        3
-        2
-        1
-        0
-
-        Pila 2
-        1
-        2
-        1
-        */
-        int aux;
-        while (!p2.PilaVacia()){
+        int aux,aux2;
+        boolean resultado = false;
+        while (!p1.PilaVacia()&&!p2.PilaVacia()){
             aux = p1.Tope();
-            if(aux == p2.Tope()){
-                //System.out.println("p1 " + aux +" p2 " + p2.Tope());
+            aux2 = p2.Tope();
+            if (aux == aux2){
                 p2.Desapilar();
                 p1.Desapilar();
-            } else  {
+                resultado = true;
+            }
+            else {
                 p1.Desapilar();
             }
-
-
         }
-        return true;
+
+        return resultado;
     }
 
 }
