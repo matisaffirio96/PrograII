@@ -22,6 +22,7 @@ public class Ejercicio1 {
         //Cargo la pila 2
         p2.Apilar(1);
         p2.Apilar(2);
+        p2.Apilar(4);
         p2.Apilar(3);
         p2.Apilar(3);
         p2.Apilar(2);

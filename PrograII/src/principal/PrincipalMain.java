@@ -1,38 +1,36 @@
 package principal;
-import api.ConjuntoTDA;
-import api.DiccionarioMultipleTDA;
-import api.DiccionarioSimpleTDA;
-import api.PilaTDA;
-import impl.Conjunto;
-import impl.DicMultipleA;
-import impl.DicSimpleA;
-import impl.PilaTF;
-import principal.Ejercicio1;
+import api.*;
+import impl.*;
+
 
 public class PrincipalMain {
     public static void main(String[] args) {
         // creo un nuevo conjunto y despues lo paso por parametro al metodo externo
         Conjunto conj = new Conjunto();
         //Agregando(conj);
-
-        PilaTF p1 = new PilaTF();
-        PilaTF p2 = new PilaTF();
-        DicSimpleA d1 = new DicSimpleA();
-        DicMultipleA d2 = new DicMultipleA();
         /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
         SumarElementos(p2); // Ejercicio 1-e
         SumarElementos2(p1);*/
 
-        //Ejercicio1.SecuenciaPila(PilaTDA p1, PilaTDA p2);
+        /*PilaTF p1 = new PilaTF();
+        PilaTF p2 = new PilaTF();
+        DicSimpleA d1 = new DicSimpleA();
+        DicMultipleA d2 = new DicMultipleA();
 
         Ejercicio1 ej = new Ejercicio1();
         System.out.println(ej.SecuenciaPila(p1,p2));
 
         EjercicioDicc ejd = new EjercicioDicc();
-        ejd.Practica(d1,d2);
+        ejd.Practica(d1,d2);*/
 
+        ColaLim cola1 = new ColaLim();
+
+        cola1.InicializarCola(2);
+        cola1.Acolar(1);
+        cola1.Acolar(2);
+        System.out.println(cola1.ColaLlena());
 
 
     }
