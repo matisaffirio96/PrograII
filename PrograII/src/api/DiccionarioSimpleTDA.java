@@ -8,3 +8,4 @@ public interface DiccionarioSimpleTDA {
     int Recuperar(int clave);
     ConjuntoTDA Claves();
 }
+
