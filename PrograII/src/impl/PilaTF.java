@@ -11,7 +11,6 @@ public class PilaTF implements PilaTDA {
     public void InicializarPila() {
         arr = new int[10];
         inx = 0;
-
     }
 
     public void Apilar(int x) {

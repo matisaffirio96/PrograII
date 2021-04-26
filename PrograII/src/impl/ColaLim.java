@@ -55,7 +55,6 @@ public class ColaLim implements ColaLimitadaTDA {
         if (inx > 0){
             return true;
         }
-
         return false;
     }
 }

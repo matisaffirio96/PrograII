@@ -23,7 +23,7 @@ public class PrincipalMain {
         System.out.println(ej.SecuenciaPila(p1,p2));
 
         EjercicioDicc ejd = new EjercicioDicc();
-        ejd.Practica(d1,d2);*/
+        ejd.Practica(d1,d2);
 
         ColaLim cola1 = new ColaLim();
 
@@ -31,6 +31,15 @@ public class PrincipalMain {
         cola1.Acolar(1);
         cola1.Acolar(2);
         System.out.println(cola1.ColaLlena());
+
+
+        Nodo n1 = new Nodo();
+
+        ListaEnlazada l1 = new ListaEnlazada();
+        l1.AgregarI(n1,4);
+        l1.AgregarI(n1,5);
+        l1.MostrarLista(n1);
+        */
 
 
     }
