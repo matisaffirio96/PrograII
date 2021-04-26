@@ -1,10 +1,13 @@
-package impl;
+package principal;
 
-public class ListaEnlazada {
-    /*
-    Nodo aux = new Nodo();
-    @Override
+public class EjercicioNodo {
+    public static class Nodo {
+        int info;
+        Nodo sig;
+    }
+
     public void MostrarLista(Nodo u) {
+        Nodo aux = new Nodo();
         aux = u;
         System.out.print("[");
         while (aux != null){
@@ -17,8 +20,8 @@ public class ListaEnlazada {
         System.out.println("]");
     }
 
-
     public Nodo AgregarF(Nodo u, int num) {
+        Nodo aux = new Nodo();
         aux.info = num;
         aux.sig = null;
         if(u == null){
@@ -35,7 +38,7 @@ public class ListaEnlazada {
     }
 
     public Nodo AgregarI(Nodo u, int num) {
-
+        Nodo aux = new Nodo();
         aux.info = num;
         aux.sig = u;
 
@@ -43,7 +46,7 @@ public class ListaEnlazada {
     }
 
     public Nodo Eliminar(Nodo u, int num) {
-
+        Nodo aux = new Nodo();
         if(u != null){
             if (u.info == num){
                 u = u.sig;
@@ -54,10 +57,12 @@ public class ListaEnlazada {
                     aux2 = aux2.sig;
                 }
                 if (aux.sig != null){
-                   aux2.sig = aux2.sig.sig;
+                    aux2.sig = aux2.sig.sig;
                 }
             }
         }
         return u;
-    }*/
+    }
+
+
 }
