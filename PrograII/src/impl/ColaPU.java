@@ -7,6 +7,7 @@ public class ColaPU implements ColaTDA {
     int[] arr;
     int inx;
 
+
     @Override
     public void IncicializarCola() {
         arr = new int[10];
