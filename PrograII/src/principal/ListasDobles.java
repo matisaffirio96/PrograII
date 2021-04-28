@@ -15,17 +15,17 @@ public class ListasDobles {
         NodoDoble aux = new NodoDoble();
         aux = u;
         System.out.print("[");
-        while (aux != null){
+        while (aux != null) {
             System.out.print(aux.info);
             aux = aux.sig;
-            if(aux != null){
+            if (aux != null) {
                 System.out.print(", ");
             }
         }
         System.out.println("]");
     }
 
-    public static void MostrarLista2 (NodoDoble u) {
+    public static void MostrarLista2(NodoDoble u) {
         System.out.print("[");
         if (u != null) {
             System.out.print(u.info + "] --> ");
@@ -39,12 +39,12 @@ public class ListasDobles {
         NodoDoble aux = new NodoDoble();
         aux.info = num;
         aux.sig = null;
-        if(u == null){
+        if (u == null) {
             u = aux;
         } else {
             NodoDoble aux2 = new NodoDoble();
             aux2 = u;
-            while(aux2.sig != null){
+            while (aux2.sig != null) {
                 aux2 = aux2.sig;
             }
             aux2.sig = aux;
@@ -61,8 +61,8 @@ public class ListasDobles {
     }
 
     public static NodoDoble Eliminar(NodoDoble u, int num) {
-        if(u != null){
-            if (u.info == num){
+        if (u != null) {
+            if (u.info == num) {
                 u = u.sig;
             } else {
                 NodoDoble aux2 = new NodoDoble();
@@ -70,13 +70,14 @@ public class ListasDobles {
                 while (aux2.sig != null && aux2.sig.info != num) {
                     aux2 = aux2.sig;
                 }
-                if (aux2.sig != null){
+                if (aux2.sig != null) {
                     aux2.sig = aux2.sig.sig;
                 }
             }
         }
         return u;
     }
+
     public static void EliminarDuplicado(NodoDoble origen) {
         ConjuntoTDA bolsa = new ConjuntoLD();
         bolsa.InicializarConjunto();
@@ -94,7 +95,7 @@ public class ListasDobles {
         }
     }
 
-    public static NodoDoble EliminarObjetivo(NodoDoble n, int num_eliminar){
+    public static NodoDoble EliminarObjetivo(NodoDoble n, int num_eliminar) {
 
         /*{n1, n2, n3, n4, n5}
 
@@ -105,27 +106,25 @@ public class ListasDobles {
         n5.ant = n4.ant;*/
 
 
-        if (n != null){
-            if (n.info == num_eliminar){ //aca evaluamos si es el primer nodo
+        if (n != null) {
+            if (n.info == num_eliminar) { //aca evaluamos si es el primer nodo
 
-                n.sig.ant = n;
-                //n.sig.ant = null;
-                //n.sig = n.sig.sig;
+                n.sig.ant = null;
 
             } else {
                 NodoDoble aux = new NodoDoble();
                 aux = n;
-                while (aux.sig != null && aux.info != num_eliminar){
+                while (aux.sig != null && aux.info != num_eliminar) {
                     aux = aux.sig;
 
                 }
-                if(aux.sig != null){ // esto anda
-                    aux.ant.sig = aux.sig;
-                    aux.sig.ant = aux.ant;
+                if (aux.sig != null) { // elimina todos menos las puntas
+
+                    aux.ant.sig = aux.sig; // el nuevo siguiente
+                    aux.sig.ant = aux.ant; // el nuevo anterior
 
                 } else {    // evaluamos si es el ultimo nodo
-                    aux.ant.sig = aux.ant;
-                    aux.sig.ant = aux.sig;
+                    aux.ant.sig = null;
                 }
             }
         }
@@ -140,28 +139,24 @@ public class ListasDobles {
         NodoDoble n4 = new NodoDoble();
 
 
-
         n1.info = 4;
         n2.info = 5;
         n3.info = 3;
         n4.info = 2;
 
 
-        n1.ant = null;
+        n1.ant = n4;
         n1.sig = n2;
         n2.ant = n1;
         n2.sig = n3;
         n3.ant = n2;
-        n3.sig  = n4;
+        n3.sig = n4;
         n4.ant = n3;
-        n4.sig = null;
+        n4.sig = n1;
 
         MostrarLista(n1);
-        EliminarObjetivo(n1,4);
-        MostrarLista(n1);
-
-
-
+        //EliminarObjetivo(n1, 4);
+        //MostrarLista(n1);
 
 
     }
