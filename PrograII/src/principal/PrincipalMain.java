@@ -6,8 +6,11 @@ import impl.*;
 public class PrincipalMain {
     public static void main(String[] args) {
         // creo un nuevo conjunto y despues lo paso por parametro al metodo externo
-        Conjunto conj = new Conjunto();
+        //Conjunto conj = new Conjunto();
         //Agregando(conj);
+        PilaTF p1 = new PilaTF();
+        PilaTF p2 = new PilaTF();
+        PasarPila(p1,p2);
         /*PasarPila(p1,p2); // Ejercicio 1-a
         PasarPilaOrdenada(p1,p2,p3); // Ejercicio 1-b
         ContarElementos(p1); // Ejercicio 1-d
@@ -68,9 +71,13 @@ public class PrincipalMain {
         p2.InicializarPila();
 
         p1.Apilar(1);
+        //System.out.println(p1.Tope());
         p1.Apilar(3);
+        //System.out.println(p1.Tope());
         p1.Apilar(6);
+        //System.out.println(p1.Tope());
         p1.Apilar(5);
+        System.out.println(p1.Tope());
 
         while (!p1.PilaVacia()){
             p2.Apilar(p1.Tope());

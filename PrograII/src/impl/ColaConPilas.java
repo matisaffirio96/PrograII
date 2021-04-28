@@ -23,20 +23,30 @@ public class ColaConPilas implements ColaTDA {
     @Override
     public void Acolar(int x) {
 
+        p1.Apilar(x);
+
     }
 
     @Override
     public void Desacolar() {
-
+        PasarPila(p1,p2);
+        p2.Desapilar();
+        PasarPila(p2,p1);
     }
 
     @Override
     public boolean ColaVacia() {
-        return false;
+
+        return p1.PilaVacia();
     }
 
     @Override
     public int Primero() {
-        return 0;
+        //int prim = p1.Tope();
+        PasarPila(p1,p2);
+        int prim = p2.Tope();
+        PasarPila(p2,p1);
+        return prim;
     }
+
 }
