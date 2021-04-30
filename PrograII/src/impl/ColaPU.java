@@ -10,13 +10,13 @@ public class ColaPU implements ColaTDA {
 
     @Override
     public void IncicializarCola() {
-        arr = new int[10];
+        arr = new int[5];
         inx = 0;
     }
 
     @Override
     public void Acolar(int x) {
-        for (int i =inx-1; i>=0; i++){
+        for (int i = inx-1; i>=0; i--){
             arr[i+1] = arr[i];
         }
         arr[0] = x;
