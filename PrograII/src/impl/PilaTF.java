@@ -9,7 +9,7 @@ public class PilaTF implements PilaTDA {
     int inx;
 
     public void InicializarPila() {
-        arr = new int[10];
+        arr = new int[5];
         inx = 0;
     }
 
