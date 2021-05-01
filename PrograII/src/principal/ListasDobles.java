@@ -157,6 +157,7 @@ public class ListasDobles {
         MostrarLista(n1);
         //EliminarObjetivo(n1, 4);
         //MostrarLista(n1);
+        EliminarDuplicado(n1);
 
 
     }
