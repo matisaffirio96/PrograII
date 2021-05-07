@@ -1,7 +1,7 @@
 package impl;
 
 import api.ConjuntoTDA;
-import jdk.nashorn.internal.ir.WhileNode;
+
 
 public class ConjuntoLD implements ConjuntoTDA {
 

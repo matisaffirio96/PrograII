@@ -7,7 +7,7 @@ import impl.PilaTF;
 public class Punto1 {
     public static void main(String[] args) {
 
-        ColaTDA col = ColaBinaria(22);
+        ColaTDA col = ColaBinaria(100);
 
         // demostración de funcionamiento
         while (!col.ColaVacia()){
