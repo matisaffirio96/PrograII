@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6233654f-888d-499e-a321-477d7ffcf731" name="Default Changelist" comment="" />
+    <list default="true" id="6233654f-888d-499e-a321-477d7ffcf731" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +13,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sDxSIecNAzLICZENZm2JWqGolE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,8 +45,9 @@
       </method>
     </configuration>
     <configuration name="Punto1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="principal.Punto1" />
-      <module name="Github_progra2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="principal.*" />
@@ -75,6 +79,7 @@
       <workItem from="1620423356611" duration="3671000" />
       <workItem from="1620430995221" duration="34000" />
       <workItem from="1620434572613" duration="186000" />
+      <workItem from="1620494253871" duration="95000" />
     </task>
     <servers />
   </component>

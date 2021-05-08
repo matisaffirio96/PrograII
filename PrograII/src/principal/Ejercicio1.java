@@ -17,7 +17,7 @@ public class Ejercicio1 {
         p1.Apilar(3);
         p1.Apilar(3);
         p1.Apilar(2);
-        p1.Apilar(5);
+        p1.Apilar(6);
 
         //Cargo la pila 2
         p2.Apilar(1);
