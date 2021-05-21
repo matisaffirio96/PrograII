@@ -5,7 +5,7 @@ import api.ColaTDA;
 public class ColaPrioridadHeap implements ColaTDA {
     @Override
     public void IncicializarCola() {
-
+        /**/
     }
 
     @Override
