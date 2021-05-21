@@ -2,18 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6233654f-888d-499e-a321-477d7ffcf731" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PrograII/src/impl/ColaPrioridadHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaLimitadaTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaLimitadaTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaPrioridadTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaPrioridadTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaTDAM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/ColaTDAM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/ConjuntoTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/ConjuntoTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/DiccionarioMultipleTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/DiccionarioMultipleTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/DiccionarioSimpleTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/DiccionarioSimpleTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/api/PilaTDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/api/PilaTDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaConPilas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaConPilas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLD$Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLD$Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaLim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaMaxSeq.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaMaxSeq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPU2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPU2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadDA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadDA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadLD$NodoPrioridad.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadLD$NodoPrioridad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadLD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ColaPrioridadLD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/Conjunto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/Conjunto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ConjuntoLD$Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ConjuntoLD$Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ConjuntoLD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ConjuntoLD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleA$Elemento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleA$Elemento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL$NodoClave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL$NodoClave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL$NodoValor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL$NodoValor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicMultipleL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleA$Elemento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleA$Elemento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleL$NodoClave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleL$NodoClave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/DicSimpleL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/ListaEnlazada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/ListaEnlazada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaLD$Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaLD$Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaLD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaLD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTF2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTF2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/impl/PilaTI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/Ejercicio1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioDicc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioDicc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioNodo$Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioNodo$Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioNodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/EjercicioNodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListaCircular$NodoCircular.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListaCircular$NodoCircular.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListaCircular.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListaCircular.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListasDobles$NodoDoble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListasDobles$NodoDoble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListasDobles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/ListasDobles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/PrincipalMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/PrincipalMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/PruebaColas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/PruebaColas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto4$Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto4$Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/Punto4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Github_progra2/principal/TPColas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Github_progra2/principal/TPColas.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sDxSIecNAzLICZENZm2JWqGolE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,7 +92,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Application.Punto1">
+  <component name="RunManager" selected="Application.PrincipalMain">
     <configuration name="PrincipalMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="principal.PrincipalMain" />
       <module name="Github_progra2" />
@@ -60,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Punto1" />
         <item itemvalue="Application.PrincipalMain" />
+        <item itemvalue="Application.Punto1" />
       </list>
     </recent_temporary>
   </component>
