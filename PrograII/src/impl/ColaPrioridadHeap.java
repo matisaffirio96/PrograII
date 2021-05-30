@@ -2,9 +2,12 @@ package impl;
 
 import api.ColaPrioridadTDA;
 import api.ColaTDA;
+import java.util.*;
 
 public class ColaPrioridadHeap implements ColaPrioridadTDA {
 
+    int [] elementos;
+    int tamanio = -1;
     @Override
     public void InicializarCola() {
 
