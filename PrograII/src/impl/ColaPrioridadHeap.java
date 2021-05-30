@@ -1,15 +1,17 @@
 package impl;
 
+import api.ColaPrioridadTDA;
 import api.ColaTDA;
 
-public class ColaPrioridadHeap implements ColaTDA {
+public class ColaPrioridadHeap implements ColaPrioridadTDA {
+
     @Override
-    public void IncicializarCola() {
-        /**/
+    public void InicializarCola() {
+
     }
 
     @Override
-    public void Acolar(int x) {
+    public void AcolarPrioridad(int x, int prioridad) {
 
     }
 
@@ -25,6 +27,11 @@ public class ColaPrioridadHeap implements ColaTDA {
 
     @Override
     public int Primero() {
+        return 0;
+    }
+
+    @Override
+    public int Prioridad() {
         return 0;
     }
 }
