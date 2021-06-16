@@ -5,9 +5,9 @@ import api.ColaPrioridadTDA;
 public class ColaPrioridadLD implements ColaPrioridadTDA {
 
     class NodoPrioridad { // la c´elula de la estructura
-    int info; // el valor almacenado
-    int prioridad; // la prioridad
-    NodoPrioridad sig; // la referencia al siguiente nodo
+        int info; // el valor almacenado
+        int prioridad; // la prioridad
+        NodoPrioridad sig; // la referencia al siguiente nodo
      }
     NodoPrioridad primero;
 
