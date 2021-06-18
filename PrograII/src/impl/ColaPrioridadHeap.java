@@ -1,13 +1,12 @@
 package impl;
 
 import api.ColaPrioridadTDA;
-import java.util.*;
 
 public class ColaPrioridadHeap implements ColaPrioridadTDA {
 
-    int[] heap;            // Los valores de la cola
+    int[] heap;                 // Los valores de la cola
     int[] prioridades;          // Las prioridades de la cola
-    int size;
+    int size;                   // tamaño del heap
 
     @Override
     public void InicializarCola() {
@@ -31,12 +30,15 @@ public class ColaPrioridadHeap implements ColaPrioridadTDA {
 
     @Override
     public void AcolarPrioridad(int x, int prioridad) { // prioridad por default
+
+
         if(size == heap.length){
             System.out.println("Cola llena");
         }
         else{
             int posicion = size;
             heap[posicion] = x;
+            prioridades[posicion] = prioridad;
             size++;
 
             while (heap[posicion] < heap[padre(posicion)]){
@@ -53,7 +55,7 @@ public class ColaPrioridadHeap implements ColaPrioridadTDA {
         } else if (heap.length == 1) {
             int min = heap[0];
             heap[0] = 0;//Se borra el elemento con un cero
-            size--;//Se decrementa el tamanyo del heap
+            size--;//Se decrementa el size del heap
 
         }
 
@@ -77,7 +79,16 @@ public class ColaPrioridadHeap implements ColaPrioridadTDA {
 
     @Override
     public int Prioridad() {
-        return (prioridades[size]);
+        int maxprior = prioridades[0];
+        for (int i = 0; i < prioridades.length; i++) {
+            if(prioridades[i] != 0){
+                if(prioridades[i]<maxprior) {
+                    maxprior = prioridades[i];
+                }
+            }
+
+        }
+        return maxprior;
     }
 
     private int HijoIzq(int pos) {
@@ -114,6 +125,29 @@ public class ColaPrioridadHeap implements ColaPrioridadTDA {
                 cambio(x, z);
                 ordenarHeap(z, y);
             }
+        }
+    }
+
+    private void mostrar() {
+        for (int i = 0; i < Math.ceil(size/2); i++) {
+            try{
+                System.out.print("Padre min: " + heap[i]);
+            }catch(Exception e) {
+                System.out.println("");
+            }
+
+            try{
+                System.out.print("Hijo izquierdo: " + heap[HijoIzq(i)]);
+            }catch(Exception e) {
+                System.out.println("");
+            }
+
+            try{
+                System.out.print("Hijo derecho: " + heap[HijoDer(i)]);
+            }catch(Exception e) {
+                System.out.println("");
+            }
+            System.out.println();
         }
     }
 }
