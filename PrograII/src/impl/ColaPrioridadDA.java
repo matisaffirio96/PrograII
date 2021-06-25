@@ -44,6 +44,7 @@ public class ColaPrioridadDA implements ColaPrioridadTDA {
 
     @Override
     public int Prioridad() {
+
         return prioridades[indice-1];
     }
 
