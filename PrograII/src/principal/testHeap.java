@@ -3,22 +3,32 @@ package principal;
 import impl.ColaPrioridadDA;
 import impl.ColaPrioridadHeap;
 
-import java.util.HashMap;
+    import java.util.HashMap;
 import java.util.Map;
 
 public class testHeap {
     public static void main(String[] args) {
         ColaPrioridadHeap h1 = new ColaPrioridadHeap();
         h1.InicializarCola();
-        h1.AcolarPrioridad(48,15);
         h1.AcolarPrioridad(5,18);
-        h1.AcolarPrioridad(24,15);
-        h1.AcolarPrioridad(15,12);
-        h1.AcolarPrioridad(67,15);
-        h1.AcolarPrioridad(17,15);
-        h1.AcolarPrioridad(30,15);
+        h1.AcolarPrioridad(7,15);
+        h1.AcolarPrioridad(8,12);
+        h1.AcolarPrioridad(2,15);
+        h1.AcolarPrioridad(9,15);
+        h1.AcolarPrioridad(12,15);
+        h1.AcolarPrioridad(14,15);
 
-        System.out.println(h1.Prioridad());
+        h1.Desacolar();
+        h1.Desacolar();
+        h1.Desacolar();
+        h1.AcolarPrioridad(10,12);
+        h1.AcolarPrioridad(2,15);
+
+        while(!h1.ColaVacia()){
+            System.out.println(h1.Primero());
+            h1.Desacolar();
+        }
+
 
         /*Map<Integer, String> ejemploHM = new HashMap<Integer, String>();
         ejemploHM.size(); // Devuelve el número de elementos del Map
